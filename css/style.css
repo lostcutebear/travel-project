@@ -1,0 +1,23 @@
+@import 'reset.css';
+
+:root {
+    --container-padding: 15px;
+    --container-width: 1270px;
+    --secondary: rgba(15, 31, 28, 0.5);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgba(246, 246, 246, 1);
+    color: #0F1F1C;
+}
+
+.none {
+    display: none !important;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
