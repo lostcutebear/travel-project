@@ -700,6 +700,7 @@ nav {
 @media (max-width: 849px) {
     .header { 
         padding-top: 34px;
+        min-height: auto;
     }
 
     .header__row {
@@ -746,3 +747,14 @@ nav {
     }
 }
 
+@media (max-width: 500px) {
+    .nav--mobile .nav__toggle {
+        top: 36px;
+    }
+
+    .nav--mobile .nav__login, 
+    .nav--mobile .nav__list {
+        gap: 35px;
+        font-size: 22px;
+    }
+}
