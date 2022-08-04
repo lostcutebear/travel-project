@@ -118,6 +118,13 @@ nav {
     line-height: 22.5px;
 }
 
+.nav__toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
 .nav__list a {
     position: relative;
 }
@@ -250,7 +257,7 @@ nav {
     height: 622px;
     top: -15px; 
     right: -10px;
-
+    pointer-events: none;
     background-image: url("./../img/header/header-elements.svg");
 }
 
@@ -545,3 +552,88 @@ nav {
     color: #FF7C4E;
 }
 
+.menu-icon-wrapper {
+    --width: 40px;
+    --height: 30px;
+    --time: 0.15s;
+    --color: #fff;
+      width: var(--width);
+      height: var(--height);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+    
+.menu-icon {
+      position: relative;
+      width: var(--width);
+      height: 4px;
+      background-color: #fff;
+    }
+    
+.menu-icon::before {
+      position: absolute;
+      left: 0;
+      top: -10px;
+      content: '';
+      width: var(--width);
+      height: 4px;
+      background-color: var(--color);
+      transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+    
+    }
+    
+.menu-icon::after {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      content: '';
+      width: var(--width);
+      height: 4px;
+      background-color: var(--color);
+      transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+    
+    }
+    
+.menu-icon.menu-icon-active {
+      background-color: transparent;
+    }
+    
+.menu-icon.menu-icon-active::before {
+      transform: rotate(45deg);
+      top: 0;
+      transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+    }
+    
+.menu-icon.menu-icon-active::after {
+      transform: rotate(-45deg);
+      top: 0;
+      transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+    }
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 1259px) {
+    .container-right {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav__list{
+        display: none;
+    }
+    
+    .nav__login {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+    
+}
