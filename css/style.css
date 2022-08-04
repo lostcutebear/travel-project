@@ -89,6 +89,10 @@ nav {
     font-weight: 500;
 }
 
+.nav__login.nav__login--footer {
+    gap: 66px;
+}
+
 .logo {
     font-weight: 700;
     font-size: 20px;
@@ -150,13 +154,11 @@ nav {
 }
 
 .btn {
-    display: block;
-    padding: 13px 44px 43px;
+    padding: 13px 44px 13px 43px;
     background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
     border-radius: 35px;
     font-weight: 500;
     font-size: 15px;
-    height: 20.5px;
     line-height: 22.5px;
     color: #fff;
 }
@@ -249,6 +251,10 @@ nav {
 
 .destinations__content {
     max-width: 456px;
+}
+
+.btn.btn--destination {
+    padding: 25px 44px 24px 43px;
 }
 
 .destinations__slider {
@@ -464,15 +470,20 @@ nav {
     color: var(--secondary);
 }
 
+.btn.btn--cta {
+    padding: 25px 54px 24px 55px;
+    border-radius: 27px;
+}
+
 /* rm -f ./.git/index.lock - if fatal: unable to create file exists error appears */
+
+/* Subscribe */
 
 .subscribe {
     padding: 35px 0 50px;
 
 }
-.container {
-    
-}
+
 .subscribe__content {
     display: flex;
     flex-direction: column;
@@ -488,10 +499,9 @@ nav {
     line-height: 82.5px;
 }
 
-.subscribe-form{
+.subscribe-form {
     padding: 12px 15px 46px;
     border-radius: 35px;
-    background-color: #fff;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -507,7 +517,9 @@ nav {
 .subscribe-form__input::placeholder {
     color: var(--secondary);
 }
-.subscribe-form__btn.btn {
+
+.btn.btn--subscribe {
+    cursor: pointer;
     font-size: 25px;
     font-weight: 600;
     border: none;
@@ -519,6 +531,8 @@ nav {
     text-align: center;
 }
 
+/* Footer */
+
 .footer {
     padding: 56px 0 74px;
 }
@@ -527,25 +541,3 @@ nav {
     color: #FF7C4E;
 }
 
-.btn--login {
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    line-height: 22.5px;
-    padding: 13px 44px;
-    display: inline-block;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
-    border-radius: 100px;
-    text-align: center;
-    color: #fff;
-}
-
-.btn--login:hover {
-    color: #e5e5e5;
-    transition: color 0.4s linear;
-}
-
-.btn--login:active {
-    position: relative;
-    top: 1px;
-}
