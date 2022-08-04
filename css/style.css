@@ -159,6 +159,7 @@ nav {
     border-radius: 35px;
     font-weight: 500;
     font-size: 15px;
+    border: none;
     line-height: 22.5px;
     color: #fff;
 }
@@ -255,6 +256,8 @@ nav {
 
 .btn.btn--destination {
     padding: 25px 44px 24px 43px;
+    border-radius: 27px;
+    font-size: 20px;
 }
 
 .destinations__slider {
@@ -409,9 +412,7 @@ nav {
 .cta{
     padding: 100px 0;
 }
-.container{
 
-}
 .cta__plate {
     display: flex;
     flex-direction: column;
@@ -464,6 +465,7 @@ nav {
 .btn.btn--cta {
     padding: 25px 54px 24px 55px;
     border-radius: 27px;
+    font-size: 20px;
 }
 
 /* rm -f ./.git/index.lock - if fatal: unable to create file exists error appears */
@@ -510,16 +512,10 @@ nav {
 }
 
 .btn.btn--subscribe {
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 600;
-    border: none;
-    line-height: 37.5px;
     padding: 34px 87px 33px 86px;
-    display: inline-block;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
-    border-radius: 35px;
-    text-align: center;
+    font-size: 25px;
+    line-height: 37.5px;
+    font-weight: 600;
 }
 
 /* Footer */
