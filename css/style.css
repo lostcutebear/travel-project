@@ -321,3 +321,105 @@ body {
     padding-right: 26px;
     justify-content: flex-start;
 }
+
+.customers {
+    padding: 100px 0 133px;
+    color: #0f1f1c;
+}
+
+.container {
+
+}
+
+.customers__row {
+    display: flex;
+    gap: 68px;
+}
+
+.customers__img {
+    max-width: 478px;
+}
+
+.customers__img img {
+    border-radius: 60px;
+}
+
+.customers__content {
+
+}
+
+.customers__title {
+    margin-bottom: 35px;
+}
+
+.customers__title h2 { 
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 67.5px;
+}
+
+/* Review */
+
+.review {
+    max-width: 491px;
+}
+
+.review__client {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.review__client h3 {
+    margin-bottom: 10px;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 49.5px;
+}
+
+.review__client p {
+    font-size: 25px;
+    line-height: 37.5px;
+    color: var(--secondary);
+}
+
+.review__client-avatar {
+    overflow: hidden;
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background:#FF794E;
+}
+
+.review__text {
+    margin-bottom: 30px;
+}
+
+.review__text p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    color: var(--secondary);
+}
+
+/* CTA */
+
+.cta{
+
+}
+.container{
+
+}
+.cta__plate{
+
+}
+.cta__title{
+
+}
+.cta__text{
+
+}
+.cta__btn{
+
+}
