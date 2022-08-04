@@ -636,4 +636,52 @@ nav {
         display: block;
     }
     
+    .nav--mobile {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background: linear-gradient(206deg, #428E5F -17.38%, #112120 78.4%), #204434;
+        flex-direction: column;
+        padding: 40px 0;
+        align-items: center;
+        transition: all 0.4s linear;
+    }
+
+    .nav--mobile .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        font-size: 22px;
+    }
+
+    .nav--mobile .nav__list a.active::after,
+    .nav--mobile .nav__list a:hover::after {
+        display: none;
+    }
+
+
+    .nav--mobile .logo {
+        font-size: 36px;
+    }
+
+    .nav--mobile .nav__login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        font-size: 25px;
+    }
+
+    .nav--mobile .nav__toggle {
+        position: fixed;
+        top: 50px;
+        right: 20px;
+    }
+
+
+    
 }
