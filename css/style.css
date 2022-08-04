@@ -427,6 +427,7 @@ nav {
 
 .cta{
     padding: 100px 0;
+    position: relative;
 }
 
 .cta__plate {
@@ -439,7 +440,6 @@ nav {
     border-radius: 60px;
 }
 .cta__title {
-    position: relative;
     margin-bottom: 30px;
     text-align: center;
     font-size: 45px;
@@ -457,15 +457,15 @@ nav {
 }
 
 .cta__plate::before {
-    left: 74px;
-    bottom: 56px;
-    background-image: url("./img/cta/cta-el-01.svg");
+    left: 174px;
+    bottom: 126px;
+    background-image: url("./../img/cta/cta-el-01.svg");
 }
 
 .cta__plate::after {
-    top: 74px;
-    right: 80px;
-    background-image: url("./img/cta/cta-el-02.svg");
+    top: 124px;
+    right: 176px;
+    background-image: url("./../img/cta/cta-el-02.svg");
 }
 
 .cta__text {
