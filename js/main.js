@@ -13,3 +13,15 @@ $(".slider__btn-prev").click(function () {
 $(".slider__btn-next").click(function () {
     owl.trigger("next.owl.carousel");
 });
+
+const navBtn = document.querySelector('.nav__toggle');
+const navMenuIcon = document.querySelector('.menu-icon');
+const nav = document.querySelector('.nav');
+navBtn.onclick = function () {
+    nav.classList.toggle('nav--mobile');
+    navMenuIcon.classList.toggle('menu-icon-active');
+    document.body.classList.toggle('no-scroll');
+}
+
+
+AOS.init();
