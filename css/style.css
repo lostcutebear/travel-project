@@ -406,20 +406,59 @@ body {
 /* CTA */
 
 .cta{
-
+    padding: 100px 0;
 }
 .container{
 
 }
-.cta__plate{
-
+.cta__plate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 581px;
+    background: #FFFFFF;
+    border-radius: 60px;
 }
-.cta__title{
-
+.cta__title {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 67.5px;
+    font-weight: 500;
+    color: #0f1f1c;
 }
-.cta__text{
 
+.cta__plate::before,
+.cta__plate::after {
+    position: absolute;
+    width: 63px;
+    height: 83px;
+    content: "";
 }
-.cta__btn{
 
+.cta__plate::before {
+    left: 74px;
+    bottom: 56px;
+    background-image: url("./img/cta/cta-el-01.svg");
 }
+
+.cta__plate::after {
+    top: 74px;
+    right: 80px;
+    background-image: url("./img/cta/cta-el-02.svg");
+}
+
+.cta__text {
+    margin-bottom: 60px;
+}
+
+.cta__text p {
+    font-size: 30px;
+    line-height: 45px;
+    color: var(--secondary);
+}
+
+/* rm -f ./.git/index.lock - if fatal: unable to create file exists error appears */
+
