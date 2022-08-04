@@ -20,6 +20,7 @@ const nav = document.querySelector('.nav');
 navBtn.onclick = function () {
     nav.classList.toggle('nav--mobile');
     navMenuIcon.classList.toggle('menu-icon-active');
+    document.body.classList.toggle('no-scroll');
 }
 
 
