@@ -321,7 +321,6 @@ nav {
 
 .slider__btn-prev {
     left: -27px;
-    
     padding-left: 26px;
     justify-content: flex-start;
 }
@@ -337,10 +336,6 @@ nav {
     color: #0f1f1c;
 }
 
-.container {
-
-}
-
 .customers__row {
     display: flex;
     gap: 68px;
@@ -352,10 +347,6 @@ nav {
 
 .customers__img img {
     border-radius: 60px;
-}
-
-.customers__content {
-
 }
 
 .customers__title {
@@ -370,8 +361,8 @@ nav {
 
 /* Review */
 
-.review {
-    max-width: 491px;
+.customers__content {
+    max-width: 565px;
 }
 
 .review__client {
