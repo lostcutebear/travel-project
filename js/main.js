@@ -6,6 +6,21 @@ owl.owlCarousel({
     startPosition: 1,
     items: 3,
     mouseDrag: false,
+    responsive : {
+        720 : {
+            margin: 10
+        },
+        950 : {
+            margin: 15
+        },
+        1000 : {
+            margin: 5
+        },
+        1100 : {
+            margin: 20,
+        }
+    }
+            
 });
 $(".slider__btn-prev").click(function () {
     owl.trigger("prev.owl.carousel", [600]);
