@@ -4,14 +4,15 @@ owl.owlCarousel({
     loop: true,
     margin: 30,
     startPosition: 1,
-    items: 3
+    items: 3,
+    mouseDrag: false,
 });
 $(".slider__btn-prev").click(function () {
-    owl.trigger("prev.owl.carousel", [300]);
+    owl.trigger("prev.owl.carousel", [600]);
 });
 
 $(".slider__btn-next").click(function () {
-    owl.trigger("next.owl.carousel");
+    owl.trigger("next.owl.carousel", [600]);
 });
 
 const navBtn = document.querySelector('.nav__toggle');
